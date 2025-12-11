@@ -51,3 +51,4 @@ print(summary(modelo_armax_segundo))
 print(coeftest(modelo_armax_segundo))
 print(checkresiduals(modelo_armax_segundo))
 
+
