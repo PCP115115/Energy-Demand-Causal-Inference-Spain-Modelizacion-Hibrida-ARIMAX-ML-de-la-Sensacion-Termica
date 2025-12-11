@@ -1,0 +1,97 @@
+PS C:\Users\pedro\Desktop\D.Elec-Tiempo\ML y DL> & C:\Users\pedro\AppData\Local\Programs\Python\Python312\python.exe "c:/Users/pedro/Desktop/D.Elec-Tiempo/ML y DL/DML_con_TCN_demanda_elec.py"
+2025-12-10 01:00:29.769754: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-12-10 01:00:33.486268: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Bloque 1: Librerías cargadas. Configuración lista.
+Dataset cargado desde ruta local: (1764, 5)
+Bloque 3: Variables listas. Controles seleccionados: 9
+Corte temporal realizado. Train hasta: 2024-11-12 00:00:00
+Test comienza a predecir desde: 2024-11-13 00:00:00
+
+--- RESUMEN DE DIMENSIONES (CORREGIDO) ---
+X_train shape: (1381, 30, 9) (Muestras, Ventana, Variables)
+X_test shape:  (353, 30, 9)
+Nota: El Data Leakage ha sido eliminado. El orden de ejecución es correcto.
+2025-12-10 01:00:35.388014: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Bloque 6: Arquitecturas compiladas correctamente.
+
+--- Entrenando Modelo Nuisance Y (Demanda) ---
+Modelo Y completado. Loss final: 0.2806
+
+--- Entrenando Modelo Nuisance T (Confort) ---
+Modelo T completado. Loss final: 0.6040
+
+Generando predicciones robustas (MC Dropout)...
+   -> Ejecutando 500 pases estocásticos...
+   -> Ejecutando 500 pases estocásticos...
+
+DIAGNÓSTICO FINAL:
+R^2 Demanda (MC Robust): 0.6271
+R^2 Distancia Confort (MC Robust): 0.0904
+
+==================================================
+RESULTADOS FINAL DOUBLE MACHINE LEARNING
+==================================================
+                                 OLS Regression Results
+=======================================================================================
+Dep. Variable:                      y   R-squared (uncentered):                   0.140
+Model:                            OLS   Adj. R-squared (uncentered):              0.138
+Method:                 Least Squares   F-statistic:                              9.019
+Date:                Wed, 10 Dec 2025   Prob (F-statistic):                     0.00286
+Time:                        01:03:54   Log-Likelihood:                         -312.26
+No. Observations:                 353   AIC:                                      626.5
+Df Residuals:                     352   BIC:                                      630.4
+Df Model:                           1
+Covariance Type:                  HAC
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+x1             0.2563      0.085      3.003      0.003       0.089       0.424
+==============================================================================
+Omnibus:                      184.603   Durbin-Watson:                   0.487
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1189.456
+Skew:                          -2.145   Prob(JB):                    5.16e-259
+Kurtosis:                      10.904   Cond. No.                         1.00
+==============================================================================
+
+Notes:
+[1] R² is computed without centering (uncentered) since the model does not contain a constant.
+[2] Standard Errors are heteroscedasticity and autocorrelation robust (HAC) using 30 lags and without small sample correction
+
+--- INTERPRETACIÓN DE NEGOCIO ---
+Por cada 1 kJ/kg que nos alejamos de la zona de confort (35-45),
+la demanda aumenta: 134.10 MW
+P-Valor (Robust): 0.002672
+>> CONCLUSIÓN: Relación ESTADÍSTICAMENTE SIGNIFICATIVA.
+PS C:\Users\pedro\Desktop\D.Elec-Tiempo\ML y DL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
