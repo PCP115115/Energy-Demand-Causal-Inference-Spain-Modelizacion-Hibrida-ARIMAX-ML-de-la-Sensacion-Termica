@@ -1,4 +1,4 @@
-**Título del Repositorio:** Modelización de la Demanda Energética en España: Análisis de la Sensación Térmica e Impacto Climático  
+Modelización de la Demanda Energética en España: Análisis de la Sensación Térmica e Impacto Climático  
 **Descripción:**  
 Este repositorio contiene el estudio completo y el código para modelar la demanda energética diaria en España utilizando variables climáticas y de calendario. La investigación integra econometría clásica (ARIMAX) con técnicas avanzadas de inferencia causal (Double Machine Learning y Causal Forests) para analizar cómo el confort térmico —medido mediante la entalpía— afecta al consumo eléctrico.
 
@@ -13,4 +13,4 @@ Este repositorio contiene el estudio completo y el código para modelar la deman
 - Scripts en Python y R para preprocesamiento de datos, estimación de modelos (ARIMAX, DML, Causal Forests) y visualización.
 - Datasets y código para reproducir el análisis y los resultados.
 
-Este proyecto ofrece un enfoque robusto y multimétodo para la modelización de la demanda energética, dirigido a investigadores y profesionales en economía energética, climatología y ciencia de datos.
+Este proyecto ofrece un enfoque robusto y multimetódico para la modelización de la demanda energética, partiendo de un exhaustivo y riguroso análisis de los datos estudiados, prosiguiendo por una modelización clásica (ARIMAX y derivados) y validando y aportando robustez al estudio con técnicas de ML y DL de vanguardia.
