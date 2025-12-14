@@ -15,4 +15,3 @@ Este repositorio contiene el estudio completo y el código para modelar la deman
 
 Este proyecto ofrece un enfoque robusto y multimetódico para la modelización de la demanda energética, partiendo de un exhaustivo y riguroso análisis de los datos estudiados, prosiguiendo por una modelización clásica (ARIMAX y derivados) y validando y aportando robustez al estudio con técnicas de ML y DL de vanguardia.
 
-**LOS SCRIPTS DE R ESTÁN EN OTRA RAMA DISTINTA A MAIN**
