@@ -1,8 +1,8 @@
 # ⚡ Modelización Híbrida de la Demanda Energética en España: Inferencia Causal y Sensación Térmica
 
-![Status](https://img.shields.io/badge/Status-Completado-success)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
-![R](https://img.shields.io/badge/R-4.0%2B-blue?logo=r&logoColor=white)
+![Status](https://img.shields.io/badge/Status-En_Desarrollo-orange)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-Reciente-blue?logo=r&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 > **Investigación 2021-2025**: Un enfoque multidisciplinar que integra **Econometría Clásica (ARIMAX)** con **Double Machine Learning (DML)** y **Redes Neuronales (TCN)** para aislar el impacto causal del confort térmico en la red eléctrica española.
